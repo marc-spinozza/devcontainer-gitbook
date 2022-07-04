@@ -1,12 +1,14 @@
 {
-  "recommendations": [
-    "eamodio.gitlens",
-    "esbenp.prettier-vscode",
-    "ms-azuretools.vscode-docker",
-    "donjayamanne.githistory",
-    "yzhang.markdown-all-in-one",
-    "ban.spellright",
-    "gruntfuggly.todo-tree",
-    "streetsidesoftware.code-spell-checker"
-  ]
+    "recommendations": [
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker",
+        "donjayamanne.githistory",
+        "yzhang.markdown-all-in-one",
+        "ban.spellright",
+        "gruntfuggly.todo-tree",
+        "streetsidesoftware.code-spell-checker",
+        "mushan.vscode-paste-image",
+        "dbaeumer.vscode-eslint"
+    ]
 }

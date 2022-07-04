@@ -6,26 +6,74 @@
     "editor.tabSize": 4,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+    "editor.codeActionsOnSave": {"source.fixAll.eslint": true},
+    "eslint.alwaysShowStatus": true,
     "editor.semanticHighlighting.enabled": false,
     "markdown.preview.breaks": true,
     "[markdown]": {
-      "editor.quickSuggestions": {
-        "comments": "on",
-        "strings": "on",
-        "other": "on"
-      }
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        }
     },
     "[html]": {
-      "editor.defaultFormatter": "vscode.html-language-features"
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
+    "todo-tree.highlights.useColourScheme": true,
+    "todo-tree.highlights.customHighlight": {
+        "BUG": {
+            "background": "#E60014",
+            "foreground": "#ddd"
+        },
+        "NOTE": {
+            "foreground": "#fff",
+            "background": "#808080"
+        },
+        "HACK": {
+            "background": "#BAE100",
+            "foreground": "#333"
+        },
+        "FIXME": {
+            "background": "#F34800",
+            "foreground": "#ddd"
+        },
+        "TODO": {
+            "background": "#FFC828",
+            "foreground": "#333"
+        },
+        "XXX": {
+            "background": "#0062C2",
+            "foreground": "#ddd"
+        },
+        "[ ]": {
+            "background": "#6800C2",
+            "foreground": "#ddd"
+        },
+        "[x]": {
+            //      "background": "#A380C2",
+            "background": "#6800C280",
+            "foreground": "#dddddd80"
+        }
+    },
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "NOTE",
+        "COMMENT",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS).*(\\n\\s*//\\s{2,}.*)*",
     "cSpell.ignorePaths": [
-      "package-lock.json",
-      "node_modules",
-      "vscode-extension",
-      ".git/objects",
-      ".vscode",
-      ".vscode-insiders",
-      ".devcontainer"
+        "package-lock.json",
+        "node_modules",
+        "vscode-extension",
+        ".git/objects",
+        ".vscode",
+        ".vscode-insiders",
+        ".devcontainer"
     ]
-  }
+}
