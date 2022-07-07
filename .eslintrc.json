@@ -4,7 +4,13 @@
         "commonjs": true,
         "es2021": true
     },
-    "extends": ["airbnb-base", "eslint:recommended", "prettier"],
+    "extends": [
+        "airbnb-base",
+        "eslint:recommended",
+        "prettier",
+        "plugin:prettier/recommended",
+        "plugin:md/prettier"
+    ],
     "parserOptions": {
         "ecmaVersion": 12,
         "sourceType": "module"
@@ -13,5 +19,20 @@
         "no-console": "error",
         "consistent-return": "off",
         "func-names": "off"
+    },
+    "overrides": [
+        {
+            "files": ["*.md"],
+            "parser": "markdown-eslint-parser",
+            "rules": {
+                "prettier/prettier": [
+                    "error",
+                    // Important to force prettier to use "markdown" parser - otherwise it wouldn't be able to parse *.md files.
+                    // You also can configure other options supported by prettier here - "prose-wrap" is
+                    // particularly useful for *.md files
+                    {"parser": "markdown"}
+                ]
     }
+        }
+    ]
 }

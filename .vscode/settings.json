@@ -75,5 +75,7 @@
         ".vscode",
         ".vscode-insiders",
         ".devcontainer"
-    ]
+    ],
+    "terminal.integrated.scrollback": 5000,
+    "eslint.validate": ["javascript", "markdown"]
 }

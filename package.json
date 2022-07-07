@@ -1,0 +1,27 @@
+{
+    "name": "devcontainer-gitbook",
+    "version": "1.0.0",
+    "description": "A gitbook development environment for VSCODE with devcontainers",
+    "author": "Marc Spinozza",
+    "keywords": [
+        "ebook",
+        "gitbook",
+        "devcontainer",
+        "vscode"
+    ],
+    "scripts": {
+        "lint:check": "node_modules/.bin/eslint .",
+        "lint:fix": "node_modules/.bin/eslint . --fix",
+        "format:check": "node_modules/.bin/prettier --check .",
+        "format:fix": "node_modules/.bin/prettier --write ."
+    },
+    "devDependencies": {
+        "eslint": "^8.19.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-md": "^1.0.19",
+        "eslint-plugin-prettier": "^4.2.1",
+        "prettier": "^2.7.1"
+    }
+}
